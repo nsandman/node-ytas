@@ -23,6 +23,16 @@ If seeking is true, this application will use the bitrate and the duration (from
 Unfortunately, no demo can be provided at the moment becuase OpenShift is giving me grief. If anybody can get this working on a free PAAS, please let me know at <nsandman09@gmail.com>.
 <br /><br />
 
+#Installation
+Installation is fairly simple. Just download or clone all the files into a folder anywhere. Make sure you have both node and npm installed. If you are unsure run the command <code>which node</code> and then <code>which npm</code>. If you get something like <code>/usr/local/bin/node</code>, it is installed. If a blank line comes up and then it prompts you to write a new command, node is not installed. Simply go to [http://www.nodejs.org](http://nodejs.org/) and install it from there.
+
+After node and npm are installed, navigate to the directory YTAS was saved to using the <code>cd</code> command. Run:
+
+<code>npm install</code>
+
+If you do not get a bunch of lines that say <mark style="background-color: black;"><span style="color: #cccccc;">npm</span> <span style="color: red;">ERR!</span></mark>, you're good. Run one of the starting commands above and you're set!
+ 
+
 #Changelog
 
 0.0.1
