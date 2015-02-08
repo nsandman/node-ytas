@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ytas by nsandman09</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ytas</h1>
+        <p>YouTube video to audio stream with seeking</p>
+
+        <p class="view"><a href="https://github.com/nsandman09/ytas">View the Project on GitHub <small>nsandman09/ytas</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/nsandman09/ytas/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/nsandman09/ytas/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/nsandman09/ytas">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="ytas---youtube-audio-streamer" class="anchor" href="#ytas---youtube-audio-streamer" aria-hidden="true"><span class="octicon octicon-link"></span></a>YTAS - YouTube Audio Streamer</h1>
+
+<p>This is a node.js script that uses the <a href="http://www.github.com/fent/node-youtube-dl">youtube-dl</a> and <a href="https://www.npmjs.com/package/liquid-ffmpeg">liquid-ffmpeg</a> modules to stream audio straight from a video. </p>
+
+<p>On a side note, YTAS will also work with the <a href="https://github.com/fluent-ffmpeg/node-fluent-ffmpeg">fluent-ffmpeg</a> module, but liquid-ffmpeg takes up less space and seemingly less memory. They also use a different command to set the bitrate.</p>
+
+<p>To start the server, simply run one of two commands:</p>
+
+<p><code>npm start</code> or <code>node server.js</code></p>
+
+<p>They're both exactly the same, so I guess you can just choose arbitrarily.</p>
+
+<p>Then, all you have to do is navigate to this URL in Google Chrome. (TODO: Add Safari and Firefox seeking support)</p>
+
+<p><code>
+http://localhost:3000/?id=<em>youtube video ID here</em>&amp;seeking=<em>0</em> or <em>1</em>
+</code></p>
+
+<p>This will return your stream. You can also change the bitrate in the <strong>options.json</strong> file.</p>
+
+<p>If seeking is true, this application will use the bitrate and the duration (from YouTube API v2) to get the full length of the audio file in bytes, which allows the video stream to support seeking in Chrome. Safari seems to ignore the HTTP status. </p>
+
+<p>Unfortunately, no demo can be provided at the moment becuase OpenShift is giving me grief. If anybody can get this working on a free PAAS, please let me know at <a href="mailto:nsandman09@gmail.com">nsandman09@gmail.com</a>.
+<br><br></p>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>Installation is fairly simple. Just download or clone all the files into a folder anywhere. Make sure you have both node and npm installed. If you are unsure run the command <code>which node</code> and then <code>which npm</code>. If you get something like <code>/usr/local/bin/node</code>, it is installed. If a blank line comes up and then it prompts you to write a new command, node is not installed. Simply go to <a href="http://nodejs.org/">http://www.nodejs.org</a> and install it from there.</p>
+
+<p>After node and npm are installed, navigate to the directory YTAS was saved to using the <code>cd</code> command. Run:</p>
+
+<p><code>npm install</code></p>
+
+<p>If you do not get a bunch of lines that say npm ERR!, you're good. Run one of the starting commands above and you're set!</p>
+
+<h1>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changelog</h1>
+
+<h2>
+<a id="001" class="anchor" href="#001" aria-hidden="true"><span class="octicon octicon-link"></span></a>0.0.1</h2>
+
+<p>Added option to enable or disable seeking</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/nsandman09">nsandman09</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
