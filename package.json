@@ -27,5 +27,12 @@
   "bundleDependencies": [],
   "private": true,
   "author": "Noah Sandman <nsandman09@gmail.com>",
-  "license": "GPLv2"
+  "license": "GPLv2",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/nsandman09/ytas.git"
+    }
+  ],
+  "homepage": "http://nsandman09.github.io/ytas"
 }

@@ -24,7 +24,7 @@ Unfortunately, no demo can be provided at the moment becuase OpenShift is giving
 <br /><br />
 
 #Installation
-Installation is fairly simple. Just download or clone all the files into a folder anywhere. Make sure you have both node and npm installed. If you are unsure run the command <code>which node</code> and then <code>which npm</code>. If you get something like <code>/usr/local/bin/node</code>, it is installed. If a blank line comes up and then it prompts you to write a new command, node is not installed. Simply go to [http://www.nodejs.org](http://nodejs.org/) and install it from there.
+Installation is fairly simple. Just download or clone all the files into a folder anywhere. Make sure you have both node and npm installed. If you are unsure, run the command <code>which node</code> and then <code>which npm</code>. If you get something like <code>/usr/local/bin/node</code>, it is installed. If a blank line comes up and then it prompts you to write a new command, node is not installed. Simply go to [http://www.nodejs.org](http://nodejs.org/) and install it from there.
 
 After node and npm are installed, navigate to the directory YTAS was saved to using the <code>cd</code> command. Run:
 
