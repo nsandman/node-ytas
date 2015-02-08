@@ -24,7 +24,6 @@ Unfortunately, no demo can be provided at the moment becuase OpenShift is giving
 <br /><br />
 
 #Changelog
-<hr />
 
 0.0.1
 -----
