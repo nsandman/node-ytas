@@ -1,6 +1,14 @@
 #YTAS - YouTube Audio Streamer
 
-This is a node.js script that uses the [youtube-dl](http://www.github.com/fent/node-youtube-dl) module to stream audio straight from a video. All you have to do is navigate to:
+This is a node.js script that uses the [youtube-dl](http://www.github.com/fent/node-youtube-dl) module to stream audio straight from a video. 
+
+To start the server, simply run one of two commands:
+
+<code>npm start</code> or <code>node server.js</code>
+
+They're both exactly the same, so I guess you can just choose arbitrarily.
+
+All you have to do is navigate to:
 
 <code>
 http://localhost:3000/?id=<i>youtube video ID here</i>
