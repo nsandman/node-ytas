@@ -1,6 +1,6 @@
 {
   "name": "freeStreamr",
-  "version": "0.0.0-1",
+  "version": "0.0.1",
   "description": "YouTube video to audio stream with seeking",
   "main": "server.js",
   "dependencies": {
