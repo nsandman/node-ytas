@@ -1,0 +1,31 @@
+{
+  "name": "freeStreamr",
+  "version": "0.0.0-1",
+  "description": "YouTube video to audio stream with seeking",
+  "main": "server.js",
+  "dependencies": {
+    "request": "2.53.x",
+    "liquid-ffmpeg": "1.0.x",
+    "through2": "0.6.x",
+    "youtube-dl": "1.8.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "keywords": [
+    "youtube",
+    "audio",
+    "stream",
+    "id"
+  ],
+  "bundleDependencies": [],
+  "private": true,
+  "author": "Noah Sandman <nsandman09@gmail.com>",
+  "license": "GPLv2"
+}
