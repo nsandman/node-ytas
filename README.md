@@ -2,7 +2,7 @@
 
 This is a node.js script that uses [youtube-dl](http://www.github.com/fent/node-youtube-dl), [request](https://github.com/request/request), [through2](https://github.com/rvagg/through2) and [liquid-ffmpeg](https://www.npmjs.com/package/liquid-ffmpeg) modules to stream audio straight from a video. 
 
-On a side note, YTAS will also work with the [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) module, but liquid-ffmpeg takes up less space and seemingly less memory. They also use a different command to set the bitrate.
+On a side note, YTAS will also work with the [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) module, but liquid-ffmpeg takes up less space and seemingly less memory. To switch to fluent, just change the <code>var ffmpeg = require('liquid-ffmpeg');</code> to <code>var ffmpeg = require('fluent-ffmpeg');</code> 
 
 To start the server, simply run one of two commands:
 
