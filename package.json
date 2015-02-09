@@ -15,8 +15,8 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
+    "node": ">= x.x.x",
+    "npm": ">= x.x.x"
   },
   "keywords": [
     "youtube",
