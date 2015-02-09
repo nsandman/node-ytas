@@ -10,7 +10,7 @@ var options = require('./options.json');
 var stream;
 var data;
 var video;
-http.createServer(audio).listen(3000);
+http.createServer(audio).listen(3000, 'localhost');
 console.log('Server listening on port 3000');
 
 function audio(a, b) {
