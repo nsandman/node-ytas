@@ -8,9 +8,6 @@ Speaking of things this could work with, one could also use the [ytdl-core](http
 
 ```javascript
 var ytdl = require('youtube-dl'); -> var ytdl = require('ytdl-core');
-```
-
-```
 npm install ytdl-core
 npm uninstall youtube-dl
 ```
