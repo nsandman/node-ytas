@@ -10,10 +10,10 @@ Speaking of things this could work with, one could also use the [ytdl-core](http
 var ytdl = require('youtube-dl'); -> var ytdl = require('ytdl-core');
 ```
 
-<code>
+```
 npm install ytdl-core
 npm uninstall youtube-dl
-</code>
+```
 
 To start the server, simply run one of two commands:
 
