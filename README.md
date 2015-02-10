@@ -2,7 +2,15 @@
 
 This is a node.js script that uses [youtube-dl](http://www.github.com/fent/node-youtube-dl), [request](https://github.com/request/request), [through2](https://github.com/rvagg/through2) and [liquid-ffmpeg](https://www.npmjs.com/package/liquid-ffmpeg) modules to stream audio straight from a video. 
 
-On a side note, YTAS will also work with the [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) module, but liquid-ffmpeg takes up less space and seemingly less memory. To switch to fluent, just change the <code>var ffmpeg = require('liquid-ffmpeg');</code> to <code>var ffmpeg = require('fluent-ffmpeg');</code> 
+On a side note, YTAS will also work with the [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) module, but liquid-ffmpeg takes up less space and seemingly less memory. To switch to fluent, just change the <code>var ffmpeg = require('liquid-ffmpeg');</code> to <code>var ffmpeg = require('fluent-ffmpeg');</code> . Make sure to also <code>npm install fluent-ffmpeg</code> (and, if you want, <code>npm uninstall liquid-ffmpeg</code>)!
+
+Speaking of things this could work with, one could also use the [ytdl-core](https://github.com/fent/node-ytdl-core) node module, but it fails when downloading copyrighted things like music. You could use similar steps as the instructions above.
+
+<code>
+var ytdl = require('youtube-dl'); -> var ytdl = require('ytdl-core');
+npm install ytdl-core<br />
+npm uninstall youtube-dl
+</code>
 
 To start the server, simply run one of two commands:
 
@@ -15,6 +23,8 @@ Then, all you have to do is navigate to this URL in any browser that is <em>not<
 <code>
 http://localhost:3000/?id=<em>youtube video ID here</em>&seeking=<em>0</em> or <em>1</em>
 </code>
+
+<strong>NOTE: If the "seeking" parameter is not filled in, it will default to true.</strong>
 
 This will return your stream. You can also change the bitrate in the <strong>options.json</strong> file.
 

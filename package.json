@@ -11,12 +11,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node server.js",
     "start": "node server.js"
   },
   "engines": {
-    "node": ">= x.x.x",
-    "npm": ">= x.x.x"
+    "node": "x.x.x",
+    "npm": "x.x.x"
   },
   "keywords": [
     "youtube",
