@@ -11,12 +11,12 @@ First, change
 ```javascript
 var ytdl = require('youtube-dl');
 ```
-to
+in server.js to
 ```javascript
 var ytdl = require('ytdl-core');
 ```
 then run:
-```shell
+```
 npm install ytdl-core
 npm uninstall youtube-dl
 ```
