@@ -6,8 +6,17 @@ On a side note, YTAS will also work with the [fluent-ffmpeg](https://github.com/
 
 Speaking of things this could work with, one could also use the [ytdl-core](https://github.com/fent/node-ytdl-core) node module, but it fails when downloading copyrighted things like music. You could use similar steps as the instructions above.
 
+First, change
+
 ```javascript
-var ytdl = require('youtube-dl'); -> var ytdl = require('ytdl-core');
+var ytdl = require('youtube-dl');
+```
+to
+```javascript
+var ytdl = require('ytdl-core');
+```
+then run:
+```shell
 npm install ytdl-core
 npm uninstall youtube-dl
 ```
