@@ -1,13 +1,13 @@
 {
-  "name": "freeStreamr",
+  "name": "ytas",
   "version": "0.0.1",
   "description": "YouTube video to audio stream with seeking",
   "main": "server.js",
   "dependencies": {
-    "request": "2.53.x",
-    "liquid-ffmpeg": "1.0.x",
-    "through2": "0.6.x",
-    "youtube-dl": "1.8.x"
+    "request": "2.x.x",
+    "liquid-ffmpeg": "1.x.x",
+    "through2": "0.x.x",
+    "youtube-dl": "1.x.x"
   },
   "devDependencies": {},
   "scripts": {

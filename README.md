@@ -30,7 +30,7 @@ They're both exactly the same, so I guess you can just choose arbitrarily.
 Then, all you have to do is navigate to this URL in any browser that is <em>not</em> Safari. (TODO: Add Safari seeking support)
 
 <code>
-http://localhost:3000/?id=<em>youtube video ID here</em>&seeking=<em>0</em> or <em>1</em>
+http://localhost:3000/?i=<em>youtube video ID here</em>&s=<em>0</em> or <em>1</em> to toggle seeking
 </code>
 
 <strong>NOTE: If the "seeking" parameter is not filled in, it will default to true.</strong>
