@@ -4,10 +4,10 @@
   "description": "YouTube video to audio stream with seeking",
   "main": "server.js",
   "dependencies": {
-    "request": "2.x.x",
-    "liquid-ffmpeg": "1.x.x",
-    "through2": "0.x.x",
-    "youtube-dl": "1.x.x"
+    "request": "2.x",
+    "lame": "1.1.0",
+    "through2": "0.x",
+    "youtube-dl": "1.x"
   },
   "devDependencies": {},
   "scripts": {
