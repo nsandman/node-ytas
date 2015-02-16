@@ -39,7 +39,7 @@ This will return your stream. You can also change the bitrate in the <strong>opt
 
 If seeking is true, this application will use the bitrate and the duration (from YouTube API v2) to get the full length of the audio file in bytes, which allows the video stream to support seeking in most browsers, but Safari seems to ignore the HTTP status. 
 
-Unfortunately, no demo can be provided at the moment becuase OpenShift is giving me grief. If anybody can get this working on a free PAAS, please let me know at <nsandman09@gmail.com>.
+For a demo, you can look at [http://ytas-demo.herokuapp.com/?i=sN36JM8l52g](http://ytas-demo.herokuapp.com/?i=sN36JM8l52g). You can also change the "i" parameter or set the "s" parameter if you want.
 
 
 #Installation
