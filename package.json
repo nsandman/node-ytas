@@ -5,7 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "request": "2.x",
-    "lame": "1.1.0",
+    "liquid-ffmpeg": "1.x",
     "through2": "0.x",
     "youtube-dl": "1.x"
   },
@@ -14,8 +14,8 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "x.x.x",
-    "npm": "x.x.x"
+    "node": "x",
+    "npm": "x"
   },
   "keywords": [
     "youtube",

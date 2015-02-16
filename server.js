@@ -11,8 +11,8 @@ var stream;
 var data;
 var child;
 var video;
-http.createServer(audio).listen(3000, 'localhost');
-console.log('Server listening on port 3000');
+http.createServer(audio).listen(8000, 'localhost');
+console.log('Server listening on port 8000');
 
 function audio(a, b) {
     data = url.parse(a.url, true).query;
@@ -32,7 +32,7 @@ function audio(a, b) {
                 "Accept-Ranges": "bytes"
             });
         });
-    });
+    }
 
     stream = b.file ? fs.createWriteStream(b.file):through();
 
